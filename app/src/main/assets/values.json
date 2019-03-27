@@ -1,0 +1,19 @@
+{
+  "E-ray":{
+    "value": 1500.00,
+    "discount": 1125.00
+  },
+  "MRI":{
+    "value": 999.99,
+    "discount": 999.99
+  },
+  "Labs":{
+    "value": 500.25,
+    "discount": 500.25
+  },
+  "Cast": {
+    "value": 2000.99,
+    "discount": 2000.99
+  }
+
+}
