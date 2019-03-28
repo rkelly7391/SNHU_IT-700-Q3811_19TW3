@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Hospital Cost Finder</string>
+    <string name="search_by_hospital">Search by Hospital</string>
+    <string name="search_by_procedure">Search by Procedure</string>
 </resources>
