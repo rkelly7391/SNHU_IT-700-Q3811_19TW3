@@ -2,4 +2,12 @@
     <string name="app_name">Hospital Cost Finder</string>
     <string name="search_by_hospital">Search by Hospital</string>
     <string name="search_by_procedure">Search by Procedure</string>
+    <string name="metro_west">Metro West</string>
+    <string name="lmh">Lenord Memorial Hospital</string>
+    <string name="mgh">Mass General</string>
+    <string name="bw">Brigham and Women</string>
+    <string name="Xray">X-ray</string>
+    <string name="MRI">MRI</string>
+    <string name="Labs">Lab Work</string>
+    <string name="Cast">Cast</string>
 </resources>
