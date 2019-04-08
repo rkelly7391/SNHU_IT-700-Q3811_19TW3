@@ -10,4 +10,6 @@
     <string name="MRI">MRI</string>
     <string name="Labs">Lab Work</string>
     <string name="Cast">Cast</string>
+    <string name="title_activity_price_by_hospital">PriceByHospital</string>
+    <string name="title_activity_price_by_procedure">PriceByProcedure</string>
 </resources>

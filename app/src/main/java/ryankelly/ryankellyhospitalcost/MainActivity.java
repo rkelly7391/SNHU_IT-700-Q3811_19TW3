@@ -1,5 +1,6 @@
 package ryankelly.ryankellyhospitalcost;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -45,8 +46,10 @@ public class MainActivity extends AppCompatActivity {
              */
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), DUMMYMESSAGE,Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), DUMMYMESSAGE,Toast.LENGTH_LONG).show();
                 System.out.println("Hospital button was selected");
+                Intent Hospital = new Intent(MainActivity.this, HospitalActivity.class);
+                startActivity(Hospital);
 
             }
         });
@@ -59,8 +62,10 @@ public class MainActivity extends AppCompatActivity {
              */
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), DUMMYMESSAGE,Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), DUMMYMESSAGE,Toast.LENGTH_LONG).show();
                 System.out.println("Procedure button was selected");
+                Intent Procedure = new Intent(MainActivity.this, Procedure.class);
+                startActivity(Procedure);
 
 
             }

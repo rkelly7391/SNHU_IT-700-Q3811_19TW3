@@ -1,19 +1,27 @@
 {
   "X-ray":{
-    "value": 1500.00,
-    "discount": 1125.00
+    "MetroWest": 1500.00,
+    "LenordMemorial": 1125.00,
+    "MassGen" : 2000.00,
+    "BW" : 1235.00
   },
   "MRI":{
-    "value": 999.99,
-    "discount": 999.99
+    "MetroWest": 5000.00,
+    "LenordMemorial": 4900.00,
+    "MassGen" : 5500.00,
+    "BW" : 5250.00
   },
   "Labs":{
-    "value": 500.25,
-    "discount": 500.25
+    "MetroWest": 500.00,
+    "LenordMemorial": 625.00,
+    "MassGen" : 600.00,
+    "BW" : 425.00
   },
   "Cast": {
-    "value": 2000.99,
-    "discount": 2000.99
+    "MetroWest": 150.00,
+    "LenordMemorial": 125.00,
+    "MassGen" : 200.00,
+    "BW" : 235.00
   }
 
 }

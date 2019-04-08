@@ -1,5 +1,6 @@
 package ryankelly.ryankellyhospitalcost;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -43,6 +44,8 @@ public class Procedure extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), DUMMYMESSAGE,Toast.LENGTH_LONG).show();
                 System.out.println("Hospital button was selected");
+                Intent xray = new Intent(Procedure.this, PriceByProcedure.class);
+                startActivity(xray);
 
             }
         });
@@ -57,6 +60,8 @@ public class Procedure extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), DUMMYMESSAGE,Toast.LENGTH_LONG).show();
                 System.out.println("Procedure button was selected");
+                Intent mri = new Intent(Procedure.this, PriceByProcedure.class);
+                startActivity(mri);
 
 
             }
@@ -72,6 +77,8 @@ public class Procedure extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), DUMMYMESSAGE,Toast.LENGTH_LONG).show();
                 System.out.println("Hospital button was selected");
+                Intent cast = new Intent(Procedure.this, PriceByProcedure.class);
+                startActivity(cast);
 
             }
         });
@@ -86,6 +93,8 @@ public class Procedure extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), DUMMYMESSAGE,Toast.LENGTH_LONG).show();
                 System.out.println("Procedure button was selected");
+                Intent labWork = new Intent(Procedure.this, PriceByProcedure.class);
+                startActivity(labWork);
 
 
             }

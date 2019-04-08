@@ -16,6 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".HospitalActivity" />
+        <activity android:name=".Procedure" />
+        <activity
+            android:name=".PriceByHospital"
+            android:label="@string/title_activity_price_by_hospital"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PriceByProcedure"
+            android:label="@string/title_activity_price_by_procedure"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -19,26 +19,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="29dp"
-                android:text="@string/metro_west" />
+                android:text="@string/Xray" />
 
             <Button
                 android:id="@+id/lmh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="29dp"
-                android:text="@string/lmh" />
+                android:text="@string/MRI" />
             <Button
                 android:id="@+id/mgh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="29dp"
-                android:text="@string/mgh" />
+                android:text="@string/Cast" />
             <Button
                 android:id="@+id/bw"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="29dp"
-                android:text="@string/bw" />
+                android:text="@string/Labs" />
         </LinearLayout>
     </ScrollView>
 
