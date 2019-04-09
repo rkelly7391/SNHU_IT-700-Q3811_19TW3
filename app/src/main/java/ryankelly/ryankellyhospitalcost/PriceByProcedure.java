@@ -24,19 +24,6 @@ public class PriceByProcedure extends AppCompatActivity {
     private ArrayList<String> procedure = null;
     private String JSONFILE = "values.json";
 
-
-    private static final String XRAY = "X-ray";
-    private static final String MRI = "MRI";
-    private static final String LABS = "Labs";
-    private static final String CAST = "Cast";
-
-    private static final String MWH = "MetroWest";
-    private static final String LMH = "LenordMemorial";
-    private static final String MGH = "MassGen";
-    private static final String BWH = "BW";
-
-    public String[] procedureArray = {XRAY, MRI, LABS, CAST};
-    public String[] hospitalArray = {MWH, LMH, MGH, BWH};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,10 +57,10 @@ public class PriceByProcedure extends AppCompatActivity {
         if(Procedure.getIsXraySelected()){
             procedure.add("Xray");
             System.out.println("Inside if:" + wasItXray);
-            for (String currentHospital: hospitalArray)
+            for (String currentHospital: Constants.hospitalArray)
             {
                 System.out.println(currentHospital);
-                procedure.add(currentHospital + " $" + getValueToDisplay(jsonValues,XRAY, currentHospital));
+                procedure.add(currentHospital + " $" + HospitalPriceUtils.getValueToDisplay(jsonValues,Constants.XRAY, currentHospital));
 
             }
             // reset the value
@@ -82,10 +69,10 @@ public class PriceByProcedure extends AppCompatActivity {
         } else if(Procedure.getIsCastSelected()){
             procedure.add("Cast");
             System.out.println(wasItCast);
-            for (String currentHospital: hospitalArray)
+            for (String currentHospital: Constants.hospitalArray)
             {
                 System.out.println(currentHospital);
-                procedure.add(currentHospital + " $" + getValueToDisplay(jsonValues,CAST, currentHospital));
+                procedure.add(currentHospital + " $" + HospitalPriceUtils.getValueToDisplay(jsonValues,Constants.CAST, currentHospital));
 
             }
             // reset the value
@@ -94,10 +81,10 @@ public class PriceByProcedure extends AppCompatActivity {
         } else if (Procedure.getIsMriSelected()){
             procedure.add("MRI");
             System.out.println(wasItMri);
-            for (String currentHospital: hospitalArray)
+            for (String currentHospital: Constants.hospitalArray)
             {
                 System.out.println(currentHospital);
-                procedure.add(currentHospital + " $" + getValueToDisplay(jsonValues,MRI, currentHospital));
+                procedure.add(currentHospital + " $" + HospitalPriceUtils.getValueToDisplay(jsonValues,Constants.MRI, currentHospital));
 
             }
             // reset the value
@@ -106,10 +93,10 @@ public class PriceByProcedure extends AppCompatActivity {
         }else if (Procedure.getIsLabsSelected()){
             procedure.add("Lab work");
             System.out.println(wasItLabs);
-            for (String currentHospital: hospitalArray)
+            for (String currentHospital: Constants.hospitalArray)
             {
                 System.out.println(currentHospital);
-                procedure.add(currentHospital + " $" + getValueToDisplay(jsonValues,LABS, currentHospital));
+                procedure.add(currentHospital + " $" + HospitalPriceUtils.getValueToDisplay(jsonValues,Constants.LABS, currentHospital));
 
             }
             // reset the value
@@ -166,49 +153,6 @@ public class PriceByProcedure extends AppCompatActivity {
         }
         //Return the json file
         return jsonFile;
-    }
-
-    /**
-     * getValue will retrun the value of an item that is for sale based on the json file.
-     * @param jsonFile json file that holds the values
-     * @param item the item that you want the value
-     * @param price is the price that you are looking for, either discount or full cost
-     * @return value is the value of the item passed in.  It can be the value or the discount value
-     */
-    public double getValue (String jsonFile, String item, String price){
-
-        //What will be returned
-        double value = 0.0;
-
-        try {
-            //get the json file
-            JSONObject jf = new JSONObject(jsonFile);
-            //get the item from the json file
-            JSONObject itemInFile  = jf.getJSONObject(item);
-            //get the price for the item
-            String StringValue = itemInFile.getString(price);
-
-            //DEBUG for json edit
-            System.out.println("Price of "+item + " is " + StringValue);
-            //Convert the string into a double
-            value = Double.parseDouble(StringValue);
-
-        } catch (JSONException e) {
-            //Catch the exception and print the reason
-            System.out.println("ERROR getting the" + price + " for " + item + " ERROR: "+e);
-            e.printStackTrace();
-        }
-
-        return value;
-
-    }
-
-    public String getValueToDisplay(String file, String procedure, String hospital){
-
-        double cost = getValue(file, procedure, hospital);
-        String costAsString = String.valueOf(cost);
-        return costAsString;
-
     }
 
 }
