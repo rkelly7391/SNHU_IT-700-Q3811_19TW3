@@ -1,27 +1,27 @@
 {
   "X-ray":{
-    "MetroWest": 1500.00,
-    "LenordMemorial": 1125.00,
-    "MassGen" : 2000.00,
-    "BW" : 1235.00
+    "MetroWest Framingham": 1500.00,
+    "MetroWest Leonard Morse": 1125.00,
+    "Massachusetts General" : 2000.00,
+    "Brigham and Women's" : 1235.00
   },
   "MRI":{
-    "MetroWest": 5000.00,
-    "LenordMemorial": 4900.00,
-    "MassGen" : 5500.00,
-    "BW" : 5250.00
+    "MetroWest Framingham": 5000.00,
+    "MetroWest Leonard Morse": 4900.00,
+    "Massachusetts General" : 5500.00,
+    "Brigham and Women's" : 5250.00
   },
   "Labs":{
-    "MetroWest": 500.00,
-    "LenordMemorial": 625.00,
-    "MassGen" : 600.00,
-    "BW" : 425.00
+    "MetroWest Framingham": 500.00,
+    "MetroWest Leonard Morse": 625.00,
+    "Massachusetts General" : 600.00,
+    "Brigham and Women's" : 425.00
   },
   "Cast": {
-    "MetroWest": 150.00,
-    "LenordMemorial": 125.00,
-    "MassGen" : 200.00,
-    "BW" : 235.00
+    "MetroWest Framingham": 150.00,
+    "MetroWest Leonard Morse": 125.00,
+    "Massachusetts General" : 200.00,
+    "Brigham and Women's" : 235.00
   }
 
 }

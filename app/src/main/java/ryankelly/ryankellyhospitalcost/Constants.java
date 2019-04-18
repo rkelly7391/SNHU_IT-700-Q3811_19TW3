@@ -13,10 +13,10 @@ class Constants {
     static final String LABS = "Labs";
     static final String CAST = "Cast";
 
-    static final String MWH = "MetroWest";
-    static final String LMH = "LenordMemorial";
-    static final String MGH = "MassGen";
-    static final String BWH = "BW";
+    static final String MWH = "MetroWest Framingham";
+    static final String LMH = "MetroWest Leonard Morse";
+    static final String MGH = "Massachusetts General";
+    static final String BWH = "Brigham and Women\'s";
 
     static final String[] procedureArray = {XRAY, MRI, LABS, CAST};
     public static final String[] hospitalArray = {MWH, LMH, MGH, BWH};
